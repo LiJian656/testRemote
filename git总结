@@ -1,0 +1,17 @@
+Git 使用总结
+
+1、要准备将项目git一下的话，最好先将仓库clone到本地一下，
+	然后将项目放入clone后多出来的文件夹下面，接着输入以下指令：
+	git add .
+	git commit -m "XXX"
+	git push -u <主机名> <分支名> （这里一般默认主机名是origin，分支名是main或者master。）
+	
+	如果没有clone 的话，指令有些许变化, 首先，在你的项目根目录下gitbash here：
+	git init
+	git add .
+	git commit -m "XXX"
+	git remote add <主机名> <url> （主机名一般是origin，任意。url是你的github上面创建的仓库的地址，复制下来即可）
+	git push -u <主机名> <分支名> （分支名也是一般是master或main）
+	
+2、使用git remote -v 可以查看添加的主机
+	使用git branch -a 可以查看你的分支信息。
